@@ -37,11 +37,13 @@ public class PreferredSizeSample extends JPanel{
         frame.setLayout(new FlowLayout());
         ////////////////////////
         
-        for(int i=0; i<10; i++){
+        for(int i=0; i<30000; i++){
             PreferredSizeSample c=new PreferredSizeSample();
             //設定 preferredSize 為 50, 50 跟 100, 100 跟 150, 150
             //觀察看看
             /////////////////////////////////////////////
+            c.setPreferredSize(new Dimension(30,30));
+
             frame.add(c);
         }
         frame.setVisible(true);
